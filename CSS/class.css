@@ -1,0 +1,20 @@
+div{border:1px #F00 solid;}
+.top{
+  width: auto;
+  height: 80px;
+}
+.left{
+  width: 200px;
+  height: 500px;
+  float: left;
+}
+.content{
+  height: 500px;
+}
+.bottom{
+  height: 80px;
+}
+.wrapper{
+  width: 1000px;
+  margin: 0 auto;
+}
