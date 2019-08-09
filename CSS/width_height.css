@@ -1,0 +1,12 @@
+div{
+  border: 1px #F00 solid;
+  width: 180px;
+  margin: 100px;
+}
+
+ul{
+  border: 1px #f00 solid;
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,2 @@
+  h1{color:red; transition:1s; display:inline-block;}
+  h1:hover{color:blue; margin-left:10px; transform:rotate(180deg)}
