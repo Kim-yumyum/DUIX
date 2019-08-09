@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <table border="2">
+      <thead>
+        <tr>
+          <th><label for="user_name">ID</label></th>
+          <td><input type="text"placeholder="아이디를 입력해주세요"id="user_name"></td>
+        </tr>
+        <tr>
+          <th><label for="password">Password</label></th>
+          <td><input type="password"placeholder="비밀번호를 입력해주세요"id="password"></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>성별</th>
+          <td>
+            <input type="radio" name="A">남자
+            <input type="radio" name="A">여자
+          </td>
+        </tr>
+        <tr>
+          <th><label for="E-mail">E-mail</label></th>
+          <td>
+            <input type="text"placeholder="아이디를 입력해주세요"id="E-mail">@<select class="" name="">
+              <option>naver.com</option>
+              <option>daum.net</option>
+              <option>gmail.com</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>취미생활</th>
+          <td>
+            <input type="checkbox">스포츠
+            <input type="checkbox">문화생활
+            <input type="checkbox">기타
+          </td>
+        </tr>
+        <tr>
+          <th>인사말</th>
+          <td>
+            <textarea name="name" rows="8" cols="80"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th>사진</th>
+          <td>
+            <input type="file">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="button" value="전송">
+  </body>
+</html>
