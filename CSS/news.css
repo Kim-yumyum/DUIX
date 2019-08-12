@@ -1,0 +1,53 @@
+.wrapper{
+  width: 900px;
+  height: 540px;
+  margin: 0 auto;
+  padding: 0 50px;
+  background: url(https://ssl.pstatic.net/static/newsstand/img/20121231/bg_panel.png) no-repeat center 0;
+}
+.header{
+  height: 111px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  margin: 0 30px;
+  border-bottom: 2px #000 solid;
+}
+.logo{
+  width: 260px;
+  height: 55px;
+  float: left;
+}
+.banner{
+  width: 468px;
+  height: 60px;
+  float:right;
+  margin-top:15px;
+}
+.button-group{
+  clear: left;
+}
+.button-group .subscribe{
+  width: 66px;
+  height: 22px;
+  font-size: 0;
+  border: 0;
+  background: url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -187px -199px no-repeat;
+  vertical-align:middle;
+}
+.button-group .user-comment{
+  display: inline-block;
+  width: 75px;
+  height: 22px;
+  border:0;
+  font-size: 0;
+  background: url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -293px -173px no-repeat;
+  vertical-align:middle;
+}
+.button-group .sns-export{
+  width: 28px;
+  height: 22px;
+  font-size:0;
+  border:0;
+  background: url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -500px -270px no-repeat;
+  vertical-align: middle;
+}
