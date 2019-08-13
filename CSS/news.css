@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 0 50px;
   background: url(https://ssl.pstatic.net/static/newsstand/img/20121231/bg_panel.png) no-repeat center 0;
+  position:relative;
 }
 .header{
   height: 111px;
@@ -50,4 +51,51 @@
   border:0;
   background: url(https://ssl.pstatic.net/static/newsstand/img/20140716/sp_nwstd.png) -500px -270px no-repeat;
   vertical-align: middle;
+}
+.main{
+  width: 851px;
+  height: 368px;
+  border: 1px #f00 solid;
+  position: relative;
+  left:25px;
+}
+.main-box{
+  width: 482px;
+  height: 360px;
+  border: 1px #f00 solid;
+  position: relative;
+  top:3px;
+  left:3px
+}
+.article-box1{
+  width: 480px;
+  height: 191px;
+  border: 1px #f00 solid;
+}
+.article-box2{
+  width: 480px;
+  height: 149px;
+  border: 1px #f00 solid;
+  position: absolute;
+  bottom:0;
+}
+.sub-box{
+  width: 362px;
+  height: 360px;
+  border: 1px #f00 solid;
+  position: relative;
+  left: 485px;
+  bottom:359px;
+}
+.article-box3{
+  width: 360px;
+  height: 210px;
+  border: 1px #f00 solid;
+}
+.article-box4{
+  width: 360px;
+  height: 141px;
+  border: 1px #f00 solid;
+  position: absolute;
+  bottom:0;
 }

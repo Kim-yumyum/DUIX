@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <style>
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
     .wrapper{
       width: 900px;
       height: 540px;
@@ -59,6 +64,116 @@
       font-size: 11px;
       vertical-align: middle;
     }
+    .contents{
+        width: auto;
+        margin:25px 30px 0;
+        height: 380px;
+        outline: 1px #F00 solid;
+        position: relative;
+      }
+      .article-left{
+        outline: 1px #F00 solid;
+        width: 480px;
+        position: absolute;
+        left:0;
+        top:0;
+        right:360px;
+        bottom:0;
+      }
+      .article-right{
+        outline: 1px #F00 solid;
+        position: absolute;
+        left:480px;
+        top:0;
+        right:0;
+        bottom:0;
+      }
+      .article-left .box1{
+        outline:1px #F00 solid;
+        height: 190px;
+      }
+      .article-left .box2{
+      outline:1px #F00 solid;
+       height: 190px;
+     }
+     .article-right .box1{
+       outline:1px #F00 solid;
+        height: 220px;
+      }
+      .article-right .box2{
+        outline:1px #F00 solid;
+        height: 160px;
+      }
+      .article-right .article-thumbnail2{
+        margin: 5px 0 5px 20px;
+      }
+      .article-right .article-thumbnail2 img{
+        float: left;
+      }
+      .article-right .article-thumbnail2 strong,
+      .article-right .article-thumbnail2 p{
+        width: 220px;
+        font-size: 13px;
+        line-height: 14px;
+        margin: 2px 0;
+      }
+      .article-right .article-thumbnail2 strong{
+        margin-left: 5px;
+      }
+      .article-right .article-thumbnail2 p{
+        margin-left: 83px;
+      }
+      .article-left .article1{
+        position: relative;
+      }
+      .article-left .article1 h2{
+        margin:0 0 15px 0;
+        padding-left: 16px;
+        font-size: 24px;
+      }
+      .article-left .article1 .article1-thumbnail{
+        height: 122px;
+        outline: 1px #f00 solid;
+      }
+      .article-left .article1 p{
+        font-size:12px;
+        line-height: 21px;
+        width: 259px;
+        position: absolute;
+        right:0;
+        top:33px;
+        left: 228px
+      }
+      .article-left .article2 {
+        padding: 10px 8px 0;
+      }
+      .article-left .article2 li:first-child{
+        margin-left: 0;
+      }
+      .article-left .article2 li{
+        width:134px;
+        outline: 1px #f00 solid;
+        float: left;
+        margin-left: 30px;
+      }
+      .article-left .article2 .article2-thumbnail{
+        overflow: hidden;
+        height: 81px;
+      }
+      .article-left .article2 .article2-thumbnail img{
+        width: 100%;
+      }
+      .article-left .article2 strong,
+      .article-left .article2 p{
+        font-size: 13px;
+        line-height: 14px;
+        padding-left: 5px
+      }
+      .article-right .box2 ul{
+        font-size: 13px;
+        line-height: 20px;
+        padding: 15px 0 0 20px;
+      }
   </style>
 </head>
 <body>
@@ -75,6 +190,64 @@
         <a href="" class="user-comment">이용자한마디</a>
         <button class="sns-export">소셜보내기</button>
         <span class="write">08-12 00:02편집</span>
+      </div>
+      <div class="contents">
+        <div class="article-left">
+          <div class="box1">
+            <div class="article1">
+              <h2>국채보상운동 출발시기 알려진 것보다 …</h2>
+              <div class="article1-thumbnail">
+              <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/022142/001.jpg" alt="">
+            </div>
+            <p>경주 최부자집 창고에서 일제강점기 전후의 보물급 문서 수만건이 쏟아져 나왔다. 경주최부자민족정신선양회 최창호 이사가 문서가 출토된 궤짝을 열어보고 있다. 국채보상운동의 출발 시기가 지금까지 알려진 것보다 더 빨랐던 것으로 보여지는 서책과 경주 최</p>
+            </div>
+            </div>
+
+          <div class="box2">
+            <div class="article2">
+              <ul>
+                <li>
+                  <div class="article2-thumbnail"><img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/022142/002.jpg" alt=""></div>
+                  <strong>경주국채보상운동역사 최부자집 창</strong>
+                  <p>국채보상운동 참가를 비롯한 경주 독</p>
+                </li>
+                <li>
+                  <div class="article2-thumbnail"><img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/022142/002.jpg" alt=""></div>
+                  <strong>경주국채보상운동역사 최부자집 창</strong>
+                  <p>국채보상운동 참가를 비롯한 경주 독</p>
+                </li>
+                <li>
+                  <div class="article2-thumbnail"><img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/022142/002.jpg" alt=""></div>
+                  <strong>경주국채보상운동역사 최부자집 창</strong>
+                  <p>국채보상운동 참가를 비롯한 경주 독</p>
+                </li>
+              </ul>
+            </div>
+        </div>
+        </div>
+        <div class="article-right">
+          <div class="box1">
+            <ul>
+              <li>
+                <div class="article-thumbnail2">
+                  <img src="https://ssl.pstatic.net/static/newsstand/2019/0813/idaegu/022142/005.jpg" alt="">
+                  <strong>낙동강에 뛰어내린 구미 고등학생,</strong>
+                  <p>구미경찰서 전경.낙동강에 투신한 고교생이 실종 15시간 만에 숨진 채 발</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="box2">
+            <ul>
+              <li>독립운동가 후손도 거짓, 명예교수도 거짓…</li>
+              <li>사임계 제출 후 다시 복귀한 고유정 변호사</li>
+              <li>가수 '강남' 한국으로 귀화 준비 중… 일본 국</li>
+              <li>세상읽기…그것은 보수가 아니다</li>
+              <li>공동칼럼…욕망의 질주와 인성교육</li>
+              <li>대일광장…훈민정음 해례본의 기구한 운명</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
