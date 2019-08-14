@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    .id-box{
+  position:relative;
+}
+.id-box input:focus+label{
+  top: -10px;
+  font-size: 12px;
+  background-color: #fff;
+  padding: 0 10px;
+}
+label{
+  position:absolute;
+  left: 10px;
+  top: 12px;
+  transition:1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.id-box input:focus{
+  border-color:blue;
+}
+.id-box input{
+  transition:1s;
+  border:2px #f00 solid;
+  border-radius:5px;
+  height: 40px;
+}
+  </style>
+</head>
+<body>
+  <div class="id-box">
+
+    <input type="text">
+    <label for="">아이디</label>
+  </div>
+</body>
+</html>
