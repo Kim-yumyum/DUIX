@@ -35,11 +35,11 @@ function sherple(){
     if(userAn == Answer){
       document.getElementById('write').innerHTML="정답입니다!";
       userArr.push(money)
-      console.log('나:'+userArr)
+      document.getElementById('user').innerHTML= userArr;
     }else if(userAn != Answer){
       document.getElementById('write').innerHTML="틀렸어요. 정답은 "+Answer+" 입니다";
       dilerArr.push(money)
-      console.log('딜러:'+dilerArr)
+      document.getElementById('diler').innerHTML= dilerArr;
     }
   }
 
