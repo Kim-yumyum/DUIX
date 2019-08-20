@@ -28,6 +28,16 @@ function sherple(){
     console.log("접기가 완료되었습니다.")
 }
 
+function sum(arr){
+    var count = 0
+
+    for(var i=0; i <arr.length; i++){
+      count += Number(arr[i])
+    }
+
+    return count
+  }
+
 //정답 맞추기 기능
   function answer(){
     var userAn = prompt('정답을 작성하세요')
@@ -35,11 +45,11 @@ function sherple(){
     if(userAn == Answer){
       document.getElementById('write').innerHTML="정답입니다!";
       userArr.push(money)
-      document.getElementById('user').innerHTML= userArr;
+      document.getElementById('user').innerHTML= sum(userArr);
     }else if(userAn != Answer){
       document.getElementById('write').innerHTML="틀렸어요. 정답은 "+Answer+" 입니다";
       dilerArr.push(money)
-      document.getElementById('diler').innerHTML= dilerArr;
+      document.getElementById('diler').innerHTML= sum(dilerArr);
     }
   }
 
