@@ -6,7 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <script>
+  //init
     var Answer = null;
+    var el_write;
+    var dilerArr = [];
+    var userArr=[];
+    var money;
+
 // 섞기 기능
 function sherple(){
       var rdmGen = Math.random() * 10;
@@ -27,17 +33,33 @@ function sherple(){
     var userAn = prompt('정답을 작성하세요')
 
     if(userAn == Answer){
-      console.log("정답입니다!")
+      document.getElementById('write').innerHTML="정답입니다!";
+      userArr.push(money)
+      console.log('나:'+userArr)
     }else if(userAn != Answer){
-      console.log("틀렸습니다. 정답은"+Answer+"입니다.")
+      document.getElementById('write').innerHTML="틀렸어요. 정답은 "+Answer+" 입니다";
+      dilerArr.push(money)
+      console.log('딜러:'+dilerArr)
     }
+  }
+
+  function moneyCall(){
+    money = prompt('얼마?');
+    document.getElementById('bank').innerHTML = money +"원"
   }
   </script>
 </head>
 <body>
-  
+  <button type="button" onclick="moneyCall()">판돈걸기!</button>
   <button onclick="sherple()">섞기</button>
-  <button onclick="answer()">맞춰</button>
-
+  <button onclick="answer()">맞추기</button>
+    <h1>status</h1>
+  <div id="write"></div>
+  <div>판돈:</div>
+  <div id="bank"></div>
+  <div>딜러:</div>
+  <div id="diler"></div>
+  <div>나:</div>
+  <div id="user"></div>
 </body>
 </html>
