@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    //랜덤숫자생성
+    var ranNum = Math.floor(Math.random()*50)+1;
+    console.log(ranNum)
+
+    //게임횟수
+    var count = 5;
+
+    //입력창
+
+    for(var i=0; i<count; i++){
+      var userNumber = prompt('숫자를 입력하십시오.')
+      if(ranNum  < userNumber){
+      alert('다운');
+      }else if(ranNum == userNumber){
+      alert('정답입니다!'); break;
+      }else if(ranNum > userNumber){
+      alert('업');
+      }else{alert('제대로 된 값을 입력하십시오.')}
+    }
+
+    //정답확인
+
+  </script>
+</head>
+<body>
+</body>
+</html>
