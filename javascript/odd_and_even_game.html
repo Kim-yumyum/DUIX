@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    var Answer = null;
+// 섞기 기능
+function sherple(){
+      var rdmGen = Math.random() * 10;
+      rdmGen = Math.floor(rdmGen);
+
+      var AnswerNum = rdmGen % 2;
+
+      if(AnswerNum == 0){
+        Answer = "짝"
+      } else if(AnswerNum == 1){
+        Answer = "홀"
+      }
+    console.log("접기가 완료되었습니다.")
+}
+
+//정답 맞추기 기능
+  function answer(){
+    var userAn = prompt('정답을 작성하세요')
+
+    if(userAn == Answer){
+      console.log("정답입니다!")
+    }else if(userAn != Answer){
+      console.log("틀렸습니다. 정답은"+Answer+"입니다.")
+    }
+  }
+
+
+  </script>
+</head>
+<body>
+  <button onclick="sherple()">섞기</button>
+  <button onclick="answer()">맞춰</button>
+</body>
+</html>
