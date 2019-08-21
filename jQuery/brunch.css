@@ -1,0 +1,55 @@
+html,body{
+  height: 100%;
+}
+body{
+  margin: 0;
+  }
+.gnb{
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top:0;
+  box-sizing: border-box;
+  padding: 14px 30px;
+  z-index: 100;
+}
+.gnb.sub-design{
+  background-color: rgba(0,0,0,0.7);
+  border-bottom: 1px #ccc solid;
+}
+.gnb.sub-design.menu{
+  color:#000;
+}
+.menu{
+  font-size: 40px;
+  color:#fff;
+}
+.cover-view{
+  height: 100%;
+  background-image: url(cover-view.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+.cover-view h1{
+  margin:0 100px;
+  width: 1000px;
+  position: absolute;
+  bottom: 50px;
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Noto Serif KR', serif;
+
+}
+.container{
+  height: 3000px;
+  border:1px #f00 solid;
+}
+.container .contents{
+  width: 1000px;
+  height: 100%;
+  border: 1px #f00 solid;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
